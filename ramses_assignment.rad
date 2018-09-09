@@ -1,5 +1,41 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;------------------------ CODE SECTION -------------------------
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+entry_point:
+  ldr a x0
+  ldr b y0
+  ldr x moves_array
 
 
+
+end:
+  hlt
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;-------------------- DATA VARIABLES SECTION -------------------
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; maximum number of moves, I wonder if we could 
+; use immediate values instead
+; though it's good to have this labeled and in memory
+max_moves: db 14
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;------------------------ DATA I/O SECTION ---------------------
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; initial robot positions
 org 224
  x0: db 42
  y0: db 42
+
+; start of our moves proper
+org 226
+ moves_array: dab [28]
+
+; final robot position
+; 42 is placeholder
+org 254
+ xf: db 42
+ yf: db 42
