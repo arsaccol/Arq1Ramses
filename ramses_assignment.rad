@@ -48,7 +48,7 @@ sr_decide_direction:
   
   decision_begin:
   test_stop_point:
-    ldr a 0,x
+    ldr a 1,x
     jn exit_point ; SPAGHETTI: jumps out of subroutine
 
   test_right:
