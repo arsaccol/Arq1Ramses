@@ -1,16 +1,91 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;------------------------ CODE SECTION -------------------------
+;------------------------ MAIN FUNCTION SECTION ----------------
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+org 0
 entry_point:
+  ; init xf
   ldr a x0
+  str a xf
+
+  ; init yf
   ldr b y0
-  ldr x moves_array
+  str b yf
+
+  ldr x array_pointer
+  
+  
+loop_perform_move:
+  jsr sr_decide_direction
+
+  
+  
 
 
-
-end:
+exit_point:
   hlt
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;-------------------- SUBROUTINE SECTION -----------------------
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+sr_decide_direction:
+  nop
+  jmp decision_begin
+
+  ;-------- This area is jumped over ----------
+    call_right: 
+      jsr sr_right
+      jmp decision_end
+    call_down: 
+      jsr sr_down
+      jmp decision_end
+    call_up: 
+      jsr sr_up
+      jmp decision_end
+    call_left: 
+      jsr sr_left
+      jmp decision_end
+  ;-------- End of jump-over area ----------
+  
+  decision_begin:
+  test_stop_point:
+    ldr a 0,x
+    jn exit_point ; SPAGHETTI: jumps out of subroutine
+
+  test_right:
+    ldr a #0
+    sub a 0,x
+    jz call_right
+
+  test_down:
+    ldr a #1
+    sub a 0,x
+    jz call_down
+
+  test_left:
+    ldr a #128
+    sub a 0,x
+    jz call_left
+
+  test_up:
+    ldr a #129
+    sub a 0,x
+    jz call_up
+
+  decision_end:
+    jmp sr_decide_direction,i
+
+sr_right:
+  nop
+  
+sr_down:
+  nop
+
+sr_left:
+  nop
+
+sr_up:
+  nop
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;-------------------- DATA VARIABLES SECTION -------------------
@@ -19,7 +94,9 @@ end:
 ; maximum number of moves, I wonder if we could 
 ; use immediate values instead
 ; though it's good to have this labeled and in memory
+array_pointer: db 226
 max_moves: db 14
+current_index: db 0
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -27,8 +104,8 @@ max_moves: db 14
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; initial robot positions
 org 224
- x0: db 42
- y0: db 42
+ x0: db 0
+ y0: db 0
 
 ; start of our moves proper
 org 226
@@ -37,5 +114,5 @@ org 226
 ; final robot position
 ; 42 is placeholder
 org 254
- xf: db 42
- yf: db 42
+ xf: db 0
+ yf: db 0
