@@ -76,18 +76,30 @@ sr_decide_direction:
 
 sr_right:
   nop
+  ldr a xf
+  add a 1,x
+  str a xf
   jmp sr_right,i
   
 sr_down:
   nop
+  ldr a yf
+  add a 1,x
+  str a yf
   jmp sr_down,i
 
 sr_left:
   nop
+  ldr a xf
+  sub a 1,x
+  str a xf
   jmp sr_left,i
 
 sr_up:
   nop
+  ldr a yf
+  sub a 1,x
+  str a yf
   jmp sr_up,i
 
 
