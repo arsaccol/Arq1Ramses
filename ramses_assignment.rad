@@ -76,15 +76,19 @@ sr_decide_direction:
 
 sr_right:
   nop
+  jmp sr_right,i
   
 sr_down:
   nop
+  jmp sr_down,i
 
 sr_left:
   nop
+  jmp sr_left,i
 
 sr_up:
   nop
+  jmp sr_up,i
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
