@@ -11,11 +11,24 @@ entry_point:
   ldr b y0
   str b yf
 
+  ; init array access index
   ldr x array_pointer
-  
+  ; init loop counter "index"
+  ldr b #0
   
 loop_perform_move:
   jsr sr_decide_direction
+  add x #2 ; increment array access index
+
+  ; loop control
+  add b #1
+  str b current_index
+  sub b max_moves
+  jz exit_point
+  ; if loop isn't finished
+  ; increment loop index and start over
+  ldr b current_index
+  jmp loop_perform_move
 
   
   
