@@ -1,0 +1,242 @@
+Correcao do trabalho pratico RAMSES - 2018/2
+Movimentar um robo em um tabuleiro de 256 x 256 posicoes
+Teste numero 1
+Caso de teste 1 da lista de casos de teste do enunciado
+End.224 recebe 0
+End.225 recebe 0
+End.226 recebe 0
+End.227 recebe 3
+End.228 recebe 1
+End.229 recebe 2
+End.230 recebe 128
+End.231 recebe 6
+End.232 recebe 129
+End.233 recebe 5
+End.234 recebe 0
+End.235 recebe 255
+End.224 deve receber 0
+End.225 deve receber 0
+End.254 deve receber 253
+End.255 deve receber 253
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 2
+Caso de teste 2 da lista de casos de teste do enunciado
+End.224 recebe 127
+End.225 recebe 127
+End.226 recebe 0
+End.227 recebe 255
+End.224 deve receber 127
+End.225 deve receber 127
+End.254 deve receber 127
+End.255 deve receber 127
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 3
+Caso de teste 3 da lista de casos de teste do enunciado
+End.224 recebe 128
+End.225 recebe 128
+End.226 recebe 0
+End.227 recebe 127
+End.228 recebe 0
+End.229 recebe 127
+End.230 recebe 0
+End.231 recebe 2
+End.232 recebe 1
+End.233 recebe 127
+End.234 recebe 1
+End.235 recebe 127
+End.236 recebe 0
+End.237 recebe 255
+End.224 deve receber 128
+End.225 deve receber 128
+End.254 deve receber 128
+End.255 deve receber 126
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 4
+Caso de teste 4 da lista de casos de teste do enunciado
+End.224 recebe 0
+End.225 recebe 0
+End.226 recebe 0
+End.227 recebe 10
+End.228 recebe 1
+End.229 recebe 5
+End.230 recebe 0
+End.231 recebe 10
+End.232 recebe 1
+End.233 recebe 5
+End.234 recebe 0
+End.235 recebe 10
+End.236 recebe 1
+End.237 recebe 5
+End.238 recebe 0
+End.239 recebe 10
+End.240 recebe 0
+End.241 recebe 255
+End.224 deve receber 0
+End.225 deve receber 0
+End.254 deve receber 40
+End.255 deve receber 15
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 5
+Caso de teste 5 da lista de casos de teste do enunciado
+End.224 recebe 10
+End.225 recebe 20
+End.226 recebe 0
+End.227 recebe 5
+End.228 recebe 129
+End.229 recebe 10
+End.230 recebe 128
+End.231 recebe 15
+End.232 recebe 0
+End.233 recebe 255
+End.224 deve receber 10
+End.225 deve receber 20
+End.254 deve receber 0
+End.255 deve receber 10
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 6
+Caso de teste 6 da lista de casos de teste do enunciado
+End.224 recebe 0
+End.225 recebe 0
+End.226 recebe 0
+End.227 recebe 50
+End.228 recebe 1
+End.229 recebe 50
+End.230 recebe 128
+End.231 recebe 50
+End.232 recebe 129
+End.233 recebe 50
+End.234 recebe 0
+End.235 recebe 255
+End.224 deve receber 0
+End.225 deve receber 0
+End.254 deve receber 0
+End.255 deve receber 0
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 7
+Caso de teste 7 da lista de casos de teste do enunciado
+End.224 recebe 0
+End.225 recebe 0
+End.226 recebe 0
+End.227 recebe 100
+End.228 recebe 0
+End.229 recebe 50
+End.230 recebe 1
+End.231 recebe 50
+End.232 recebe 1
+End.233 recebe 100
+End.234 recebe 0
+End.235 recebe 255
+End.224 deve receber 0
+End.225 deve receber 0
+End.254 deve receber 150
+End.255 deve receber 150
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 8
+Caso de teste 8 da lista de casos de teste do enunciado
+End.224 recebe 0
+End.225 recebe 0
+End.226 recebe 128
+End.227 recebe 50
+End.228 recebe 129
+End.229 recebe 100
+End.230 recebe 128
+End.231 recebe 100
+End.232 recebe 129
+End.233 recebe 50
+End.234 recebe 0
+End.235 recebe 255
+End.224 deve receber 0
+End.225 deve receber 0
+End.254 deve receber 106
+End.255 deve receber 106
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 9
+Caso de teste 9 da lista de casos de teste do enunciado
+End.224 recebe 128
+End.225 recebe 128
+End.226 recebe 0
+End.227 recebe 127
+End.228 recebe 0
+End.229 recebe 127
+End.230 recebe 1
+End.231 recebe 127
+End.232 recebe 1
+End.233 recebe 127
+End.234 recebe 0
+End.235 recebe 10
+End.236 recebe 1
+End.237 recebe 10
+End.238 recebe 0
+End.239 recebe 255
+End.224 deve receber 128
+End.225 deve receber 128
+End.254 deve receber 136
+End.255 deve receber 136
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Teste numero 10
+Caso de teste 10 da lista de casos de teste do enunciado
+End.224 recebe 127
+End.225 recebe 127
+End.226 recebe 128
+End.227 recebe 127
+End.228 recebe 128
+End.229 recebe 127
+End.230 recebe 129
+End.231 recebe 127
+End.232 recebe 129
+End.233 recebe 127
+End.234 recebe 128
+End.235 recebe 20
+End.236 recebe 129
+End.237 recebe 30
+End.238 recebe 0
+End.239 recebe 255
+End.224 deve receber 127
+End.225 deve receber 127
+End.254 deve receber 109
+End.255 deve receber 99
+Valor inicial do PC e' 0
+Numero maximo de instrucoes e' 1000000
+
+Arquivo ramses_assignment_image.mem:
+ Teste 1: HLT -- Resultado correto
+  Executadas 113 instrucoes, com 253 leituras e 19 escritas (272 acessos)
+ Teste 2: HLT -- Resultado correto
+  Executadas 11 instrucoes, com 25 leituras e 3 escritas (28 acessos)
+ Teste 3: HLT -- Resultado correto
+  Executadas 122 instrucoes, com 277 leituras e 23 escritas (300 acessos)
+ Teste 4: HLT -- Resultado correto
+  Executadas 167 instrucoes, com 379 leituras e 31 escritas (410 acessos)
+ Teste 5: HLT -- Resultado correto
+  Executadas 89 instrucoes, com 199 leituras e 15 escritas (214 acessos)
+ Teste 6: HLT -- Resultado correto
+  Executadas 113 instrucoes, com 253 leituras e 19 escritas (272 acessos)
+ Teste 7: HLT -- Resultado correto
+  Executadas 101 instrucoes, com 229 leituras e 19 escritas (248 acessos)
+ Teste 8: HLT -- Resultado correto
+  Executadas 125 instrucoes, com 277 leituras e 19 escritas (296 acessos)
+ Teste 9: HLT -- Resultado correto
+  Executadas 146 instrucoes, com 331 leituras e 27 escritas (358 acessos)
+ Teste 10: HLT -- Resultado correto
+  Executadas 182 instrucoes, com 403 leituras e 27 escritas (430 acessos)
+ Executadas um total de 1169 instrucoes, com 2626 leituras e 202 escritas (2828 acessos)
+ Todos os testes corretos
+
